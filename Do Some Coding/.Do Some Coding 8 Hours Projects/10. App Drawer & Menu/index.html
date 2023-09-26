@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <header>
+        <nav class="container" id="home">
+          <div class="logo">Portfolio</div>
+          <div class="menu_bar" id="menuBar">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#project"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+        <div class="menu_mobile" id="menuMobile">
+          <div class="closebtn" id="close_Btn">
+            <button class="crossBtn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <ul>
+            <a href="#home" onclick="menuClose()"><li>Home</li></a>
+            <a href="#project" onclick="menuClose()"><li>Projects</li></a>
+            <a href="#contact" onclick="menuClose()"><li>Contact</li></a>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero">
+          <div class="container">
+            <div class="hero_image animate__animated animate__backInLeft">
+              <img src="./img/hero.png" alt="hero Image">
+            </div>
+            <div class="hero_content">
+              <h1>
+                <span class="hi_text">Hi</span>, I am <Span class="name_text">Ankit</Span>
+              </h1>
+              <h2>Frontend Develpoer</h2>
+            </div>
+          </div>
+        </section>
+        <section id="project">
+          <h2>PROJECTS</h2>
+          <div class="container">
+            <div class="project_container">
+              <a href="../1. APJ Abdul kalam/index.html">
+                <div class="grid_item">
+                  <div class="card">
+                    <img src="./img/project1.png" alt="project1">
+                    <div class="card_content">
+                      <h3>Tribute Website</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project2.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Job Application</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project3.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Parallax Website</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project4.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Landing Page</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project5.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Resturant Website</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project6.png" alt="project1">
+                  <div class="card_content">
+                    <h3>My Tune</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project7.png" alt="project1">
+                  <div class="card_content">
+                    <h3>YouTube Clone</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project8.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Wekiepedia Page</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid_item">
+                <div class="card">
+                  <img src="./img/project9.png" alt="project1">
+                  <div class="card_content">
+                    <h3>Tour</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2>Let's Work together...</h2>
+            <div class="top_contact">
+              <div class="contact_way">
+                <i class="fab fa-linkedin"></i>
+                <h3>Linkedin</h3>
+              </div>
+              <div class="contact_way">
+                <i class="fab fa-twitter"></i>
+                <h3>Twitter</h3>
+              </div>
+              <div class="contact_way">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Send Mail</h3>
+              </div>
+            </div>
+            <div class="bottom_contact">
+              <div class="contact_way">
+                <i class="fab fa-github"></i>
+                <h3>Github</h3>
+              </div>
+              <div class="contact_way">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Mobile</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          Created by Ankit Kumar yadav.
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+  </body>
+</html>

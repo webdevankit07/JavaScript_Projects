@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: brown;
+}
+
+.main_container{
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.imagee_container{
+    text-align: center;
+}
+
+.imagee_container img{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    background-color: lightgray;
+    width: 250px;
+    height: 250px;
+}
+
+.btn{
+    background-color: slateblue;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+.btn:hover{
+    background-color: rgb(71, 60, 145);
+}
+.btn:active{
+    background-color: slateblue;
+}

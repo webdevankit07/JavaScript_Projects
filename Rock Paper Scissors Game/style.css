@@ -1,0 +1,58 @@
+body{
+    background-color: #f1f1f1;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 100px;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    border: none;
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    opacity: .7;
+}
+button:active{
+    opacity: 1;
+}
+
+#rock{
+    background-color: red;
+}
+#paper{
+    background-color: blue;
+}
+#scissors{
+    background-color: green;
+}
+
+#user-socre{
+    color: #2196f3;
+}
+#computer-socre{
+    color: #ff0000;
+}

@@ -1,0 +1,75 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    display: grid; 
+    place-items: center; 
+    height: 100vh; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.split{
+    width: 50%;
+    height: 100%;
+}
+
+h1{
+    font-size: 100px;
+    margin: 40px 0;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.left{
+    background-color: pink;
+    background-image: url('https://i.pinimg.com/originals/a2/27/df/a227df4822db04573a0755bac50c7b32.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+.right{
+    background-color: lightblue;
+    background-image: url('https://images.samsung.com/is/image/samsung/p6pim/in/sm-e236blbhins/gallery/in-galaxy-f23-6gb-ram-sm-e236blbhins-531512718?$2052_1641_PNG$');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 1s ease-in-out;
+}
+
+
+.btn{
+    background-color: #000;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: background-color 1s ;
+    white-space: nowrap;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.active-left .left{
+    width: 80%;
+}
+.active-left .right{
+    width: 20%;
+}
+.active-right .right{
+    width: 80%;
+}
+.active-right .left{
+    width: 20%;
+}

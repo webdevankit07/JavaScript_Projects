@@ -1,0 +1,98 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+body{
+    background-color: #2f56aa;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 62.5%;
+} 
+
+
+.password_container{
+    background-color: white;
+    padding: 1.3rem 2rem;
+    border-radius: .3rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+h2{
+    font-size: 1.2rem;
+}
+
+
+.inpu_container{
+    position: relative;
+    width: 350px;
+    border: 3px solid rgb(138, 137, 137);
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+.input{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+
+.fa-copy{
+    position: absolute;
+    left: 295px;
+    top: 0;
+    font-size: 25px;
+    cursor: pointer;
+    padding: .5rem;
+    color: rgb(83, 82, 82);
+}
+.fa-copy:hover{
+    color: rgb(0, 0, 0);
+}
+.fa-copy:active{
+    color: rgb(83, 82, 82);
+}
+
+
+.btn{
+    background-color: #fd4545;
+    color: white;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) ;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.btn:hover{
+    background-color: #b42929;
+}
+.btn:active{
+    background-color: #fd4545;
+    transition: .005s ease-in-out;
+}
+
+
+.alert_container{
+    position: fixed;
+    bottom: -50px;
+    margin-left: 70px;
+    min-width: 300px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) ;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    transition: .2s ease-in-out;
+    padding: .5rem 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.active.alert_container{
+    bottom: 30px;
+}

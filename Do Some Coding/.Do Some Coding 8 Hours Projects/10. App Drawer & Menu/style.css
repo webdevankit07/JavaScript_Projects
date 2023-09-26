@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 62.5%; }
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+body { font-size: 1.4rem; }
+
+
+
+
+/* main Css  */
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+header{
+  background: var(--lighting-color);
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu_bar{
+  display: none;
+  cursor: pointer;
+}
+
+
+.menu_bar i{
+  padding: 1rem 2rem;
+}
+
+.menu_bar:active i{
+  color: rgba(255, 255, 255, 0.733);
+}
+
+
+nav ul{
+  display: flex;
+  gap: 2rem;
+}
+
+
+nav ul li{
+  list-style: none;
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: .3s ease-in-out;
+}
+
+
+nav ul li:hover{
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: .3s ease-in-out;
+}
+
+
+.logo{
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+#hero{
+  background: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: 4px solid var(--lighting-color);
+}
+
+
+#hero .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.hero_content{
+  display: grid;
+  place-items: center;
+}
+
+
+#hero h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+.hi_text{
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+
+.name_text{
+  font-size: 5rem;
+}
+
+
+#hero h2{
+  font-size: 4rem;
+  font-weight: bold;
+
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(40, end), blink .75s step-end infinite;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes blink{
+  from,
+  to{
+    border-color: transparent;
+  }
+  50%{
+    border-color: orange;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* project SEction  */
+#project{
+  background: var(--darker-color);
+  padding-bottom: 5rem;
+}
+
+
+#project h2{
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+.project_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+
+.project_container a{
+  text-decoration: none;
+}
+
+
+.grid_item{
+  display: grid;
+  place-items: center;
+}
+
+
+.card{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all .2s ease-in-out ;
+}
+
+
+.card:hover{
+  transform: scale(1.05);
+  transition: all .5s ease-in-out ;
+}
+
+
+.card:hover img{
+  transform: scale(1.05);
+  transition: all .3s ease-in-out ;
+  opacity: 0.8;
+}
+
+
+.card_content{
+  padding: 2rem;
+  position: relative;
+  top:-6.5rem;
+  margin-bottom: -6.5rem;
+  transform: translateY(100px);
+  transition: .5s ease-in-out;
+}
+
+
+.card:hover .card_content{
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(0);
+}
+
+
+
+
+
+
+/* contact section  */
+
+#contact{
+  background: var(--dark-color);
+}
+
+
+#contact h2{
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+#contact .container{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+
+
+.top_contact{
+  margin: 0 auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+
+
+.contact_way{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact_way i{
+  font-size: 3rem;
+}
+
+
+.contact_way h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+.bottom_contact{
+  margin: 0 auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+}
+
+
+
+
+/* footer  */
+footer{
+  background: var(--darker-color);
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for menu mobile  */
+
+/* Simple Drop_down Menu  */
+/* .menu_mobile{
+  background: var(--darker-color);
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+}
+
+.menu_mobile ul{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menu_mobile a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu_mobile ul li{
+  padding: 1rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.menu_mobile ul li:hover{
+  background-color: var(--dark-color);
+}
+
+.show_menu{
+  display: block;
+} */
+
+
+
+/* for Drower Menu  */
+
+.menu_mobile{
+  background: var(--darker-color);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transform: translateX(100vw);
+  transition: all .3s ease-in-out;
+}
+
+.show_menu{
+  transform: translateX(0);
+}
+
+.menu_mobile ul{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menu_mobile a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu_mobile ul li{
+  padding: 1rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.menu_mobile ul li:hover{
+  background-color: var(--dark-color);
+}
+
+.closebtn{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: .5rem;
+  right: 2rem;
+}
+
+.crossBtn{
+  padding: 2rem;
+  font-size: 4rem;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+
+.closebtn:active i{
+  color: rgba(255, 255, 255, 0.733);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Querry  */
+@media (max-width:768px){
+  html{
+    font-size: 40%;
+  }
+  .logo{
+    font-size: 3rem;
+  }
+  #hero .container{
+    flex-direction: column;
+  }
+  .hero_image{
+    display: grid;
+    place-items: center;
+  }
+  #contact .container{
+    height: 60vh;
+  }
+  .container ul{
+    display: none;
+  }
+  .menu_bar{
+    display: inline-block;
+  }
+  .menu_bar i{
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width:500px){
+  html{
+    font-size: 32%;
+  }
+  #contact .container{
+    height: 40vh;
+  }
+}

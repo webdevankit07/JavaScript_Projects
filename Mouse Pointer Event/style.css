@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: darkblue;
+    color: white;
+    font-family: cursive;
+}
+
+.container{
+    display: flex;
+}
+
+
+.mouse_event{
+    position: relative;
+    border: 1px solid lightgray;
+    margin: 40px;
+    min-width: 180px;
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+    font-size: 30px;
+}
+
+
+
+.mouse_event h4{
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    font-weight: 100;
+    color: lightgray;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+}

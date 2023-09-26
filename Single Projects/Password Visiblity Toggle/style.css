@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+}
+
+.form div{
+    margin: 15px 0;
+}
+
+
+.eye{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.eye.active{
+    display: none;
+}
